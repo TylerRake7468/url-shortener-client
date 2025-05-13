@@ -6,7 +6,7 @@ function Top100() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3000/short_urls')
+    fetch('/short_urls')
       .then((res) => res.json())
       .then((data) => {
         setUrls(data.urls || []);

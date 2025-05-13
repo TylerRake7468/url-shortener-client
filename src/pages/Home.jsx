@@ -10,7 +10,7 @@ function Home() {
     setResult(null);
     setError(null);
     try {
-      const res = await fetch('http://localhost:3000/short_urls', {
+      const res = await fetch('/short_urls', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
