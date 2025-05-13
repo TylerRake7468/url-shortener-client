@@ -5,13 +5,15 @@ import Top100 from './pages/Top100';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/top100" element={<Top100 />} />
-      </Routes>
-    </Router>
+    <div style={{ width: '100%', minHeight: '100vh' }}>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/top100" element={<Top100 />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
