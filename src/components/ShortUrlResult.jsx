@@ -1,5 +1,3 @@
-import React from 'react';
-
 function ShortUrlResult({ result, error }) {
   if (error) {
     return <p style={{ color: 'red', marginTop: '1rem' }}>{error}</p>;
